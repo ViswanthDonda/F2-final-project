@@ -1,7 +1,7 @@
 let students = [
-    { ID: 1, name: 'Alice', age: 21, grade: 'A', degree: 'Btech', email: 'alice@example.com' },
-    { ID: 2, name: 'Bob', age: 22, grade: 'B', degree: 'MBA', email: 'bob@example.com' },
-    { ID: 3, name: 'Charlie', age: 20, grade: 'C', degree: 'Arts', email: 'charlie@example.com' }
+    { ID: 1, name: 'Aravind', age: 21, grade: 'A', degree: 'Btech', email: 'aravind@gmail.com' },
+    { ID: 2, name: 'Bhanu', age: 22, grade: 'B', degree: 'MBA', email: 'bhanu@gmail.com' },
+    { ID: 3, name: 'Charan', age: 20, grade: 'C', degree: 'Arts', email: 'charan@gmail.com' }
 ];
 let addStudent ;
 let editStudent ;
@@ -16,7 +16,7 @@ let currId ;
     write = "";
     for(x in students){
         write = write+`<tr><td>${students[x].ID}</td><td>${students[x].name}</td><td>${students[x].email}</td><td>${students[x].age}</td><td>${students[x].grade}</td><td>${students[x].degree}
-        <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./assest/pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./assest/trash-svgrepo-com.svg"></td></tr>`
+        <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./trash-svgrepo-com.svg"></td></tr>`
     }
 
     document.getElementById("tbody").innerHTML = write;
@@ -62,7 +62,7 @@ addStudent.addEventListener('click',function(){
     write = "";
     for(x in students){
         write = write+`<tr><td>${students[x].ID}</td><td>${students[x].name}</td><td>${students[x].email}</td><td>${students[x].age}</td><td>${students[x].grade}</td><td>${students[x].degree}
-        <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./assest/pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./assest/trash-svgrepo-com.svg"></td></tr>`
+        <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./trash-svgrepo-com.svg"></td></tr>`
     }
 
     document.getElementById("tbody").innerHTML = write;
@@ -110,7 +110,7 @@ editStudent.addEventListener('click',function(){
     write = "";
     for(x in students){
         write = write+`<tr><td>${students[x].ID}</td><td>${students[x].name}</td><td>${students[x].email}</td><td>${students[x].age}</td><td>${students[x].grade}</td><td>${students[x].degree}
-        <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./assest/pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./assest/trash-svgrepo-com.svg"></td></tr>`
+        <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./trash-svgrepo-com.svg"></td></tr>`
     }
 
     document.getElementById("tbody").innerHTML = write;
@@ -142,7 +142,7 @@ function deleteStudent(id){
     write = "";
     for(x in students){
         write = write+`<tr><td>${students[x].ID}</td><td>${students[x].name}</td><td>${students[x].email}</td><td>${students[x].age}</td><td>${students[x].grade}</td><td>${students[x].degree}
-        <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./assest/pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./assest/trash-svgrepo-com.svg"></td></tr>`
+        <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./trash-svgrepo-com.svg"></td></tr>`
     }
 
     document.getElementById("tbody").innerHTML = write;
@@ -155,7 +155,7 @@ searchField.addEventListener('keyup',function(){
         write = "";
         for(x in students){
             write = write+`<tr><td>${students[x].ID}</td><td>${students[x].name}</td><td>${students[x].email}</td><td>${students[x].age}</td><td>${students[x].grade}</td><td>${students[x].degree}
-            <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./assest/pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./assest/trash-svgrepo-com.svg"></td></tr>`
+            <img  id="edit-btn" onclick="edit(${students[x].ID})" src="./pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${students[x].ID})" src="./trash-svgrepo-com.svg"></td></tr>`
         }
     
         document.getElementById("tbody").innerHTML = write;
@@ -178,7 +178,7 @@ function searchStudents(){
     write = "";
     for(x in filter){
         write = write+`<tr><td>${filter[x].ID}</td><td>${filter[x].name}</td><td>${filter[x].email}</td><td>${filter[x].age}</td><td>${filter[x].grade}</td><td>${filter[x].degree}
-        <img  id="edit-btn" onclick="edit(${filter[x].ID})" src="./assest/pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${filter[x].ID})" src="./assest/trash-svgrepo-com.svg"></td></tr>`
+        <img  id="edit-btn" onclick="edit(${filter[x].ID})" src="./pencil-svgrepo-com.svg"> <img onclick="deleteStudent(${filter[x].ID})" src="./trash-svgrepo-com.svg"></td></tr>`
     }
 
     document.getElementById("tbody").innerHTML = write;
